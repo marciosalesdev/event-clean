@@ -1,0 +1,12 @@
+spring:
+  application:
+   name: EventClean
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/eventClean
+    password: ${CHAVE_BANCO}
+    username: ${USUARIO_BANCO}
